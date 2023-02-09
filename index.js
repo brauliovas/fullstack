@@ -4,7 +4,7 @@ const spawn = require('child_process').spawn;
 const wss = new WebSocket.Server({ port: 5500 });
 
 wss.on('connection', (ws) => {
-  console.log('Client connected');
+  console.log('Client connected') ;
   const bash = spawn('/bin/bash', ['-i']);
   bash.stdout.on('data', (data) => {
     ws.send(data.toString(), (error) => {

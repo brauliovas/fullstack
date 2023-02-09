@@ -3,7 +3,7 @@ FROM alpine:latest
 RUN apk update && \
     apk add --no-cache nodejs npm
 
-WORKDIR /app
+WORKDIR  /app
 COPY package.json ./
 RUN npm install
 COPY . .
