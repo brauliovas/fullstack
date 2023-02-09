@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Web Terminal</title>
+    <style>
+      #terminal {
+        font-family: monospace;
+        white-space: pre;
+        overflow-wrap: break-word;
+        padding: 10px;
+      }
+      input[type="text"] {
+        width: 100%;
+        font-family: monospace;
+        padding: 10px;
+        margin-top: 10px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="terminal"></div>
+    <form>
+      <input type="text" id="input">
+    </form>
+    <script src="terminal.js"></script>
+  </body>
+</html>
